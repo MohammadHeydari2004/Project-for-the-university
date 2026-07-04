@@ -163,7 +163,7 @@ dist-ssr
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "مدیر کل",
       "email": "admin1@edu.com",
       "password": "123456",
@@ -171,7 +171,7 @@ dist-ssr
       "status": "active"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "مدیر دوم",
       "email": "admin2@edu.com",
       "password": "123456",
@@ -179,7 +179,7 @@ dist-ssr
       "status": "inactive"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "محمد حسینی",
       "email": "teacher1@edu.com",
       "password": "123456",
@@ -187,7 +187,7 @@ dist-ssr
       "status": "active"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "سارا محمدی",
       "email": "teacher2@edu.com",
       "password": "123456",
@@ -195,7 +195,7 @@ dist-ssr
       "status": "active"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "علی رضایی",
       "email": "teacher3@edu.com",
       "password": "123456",
@@ -203,7 +203,7 @@ dist-ssr
       "status": "inactive"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "زهرا احمدی",
       "email": "student1@edu.com",
       "password": "123456",
@@ -211,7 +211,7 @@ dist-ssr
       "status": "active"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "امیر حسنی",
       "email": "student2@edu.com",
       "password": "123456",
@@ -219,7 +219,7 @@ dist-ssr
       "status": "active"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "فاطمه نوری",
       "email": "student3@edu.com",
       "password": "123456",
@@ -227,7 +227,7 @@ dist-ssr
       "status": "active"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "حسین موسوی",
       "email": "student4@edu.com",
       "password": "123456",
@@ -237,21 +237,28 @@ dist-ssr
   ],
   "classes": [
     {
-      "id": 1,
+      "id": "1",
       "title": "پیشرفته React",
       "teacherId": 3,
-      "studentIds": [6, 7, 8],
+      "studentIds": [
+        6,
+        7,
+        8
+      ],
       "capacity": 20,
       "status": "active",
       "description": "بررسی عمیق الگوها و بهترین شیوه‌های React",
       "createdAt": "2025-07-01T10:00:00.000Z",
-      "updatedAt": "2025-07-01T10:00:00.000Z"
+      "updatedAt": "2026-07-04T17:43:36.091Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Backend با Node.js",
       "teacherId": 4,
-      "studentIds": [6, 7],
+      "studentIds": [
+        6,
+        7
+      ],
       "capacity": 25,
       "status": "active",
       "description": "توسعه سمت سرور با Node.js و Express",
@@ -259,20 +266,22 @@ dist-ssr
       "updatedAt": "2025-07-05T10:00:00.000Z"
     },
     {
-      "id": 3,
-      "title": "برنامه‌نویسی Python",
+      "title": "تست ‍۱ ",
       "teacherId": 5,
-      "studentIds": [8, 9],
-      "capacity": 30,
-      "status": "inactive",
-      "description": "مبانی و مفاهیم پیشرفته Python",
-      "createdAt": "2025-07-10T10:00:00.000Z",
-      "updatedAt": "2025-07-10T10:00:00.000Z"
+      "studentIds": [
+        "6",
+        "7"
+      ],
+      "capacity": 10,
+      "status": "active",
+      "description": "هاها",
+      "createdAt": "2026-07-04T17:42:36.037Z",
+      "id": "COkhXPy79kk"
     }
   ],
   "sessions": [
     {
-      "id": 1,
+      "id": "1",
       "classId": 1,
       "title": "جلسه 1 - مقدمه‌ای بر React",
       "date": "2025-08-01",
@@ -280,7 +289,7 @@ dist-ssr
       "createdAt": "2025-07-25T10:00:00.000Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "classId": 1,
       "title": "جلسه 2 - Components و Props",
       "date": "2025-08-08",
@@ -288,7 +297,7 @@ dist-ssr
       "createdAt": "2025-08-02T10:00:00.000Z"
     },
     {
-      "id": 3,
+      "id": "3",
       "classId": 2,
       "title": "جلسه 1 - مقدمه Node.js",
       "date": "2025-08-03",
@@ -296,7 +305,7 @@ dist-ssr
       "createdAt": "2025-07-28T10:00:00.000Z"
     },
     {
-      "id": 4,
+      "id": "4",
       "classId": 2,
       "title": "جلسه 2 - Express Framework",
       "date": "2025-08-10",
@@ -304,7 +313,7 @@ dist-ssr
       "createdAt": "2025-08-04T10:00:00.000Z"
     },
     {
-      "id": 5,
+      "id": "5",
       "classId": 3,
       "title": "جلسه 1 - مبانی Python",
       "date": "2025-08-05",
@@ -312,12 +321,20 @@ dist-ssr
       "createdAt": "2025-07-30T10:00:00.000Z"
     },
     {
-      "id": 6,
+      "id": "6",
       "classId": 3,
       "title": "جلسه 2 - توابع و ماژول‌ها",
       "date": "2025-08-12",
       "description": "تعریف توابع و استفاده از ماژول‌ها",
       "createdAt": "2025-08-06T10:00:00.000Z"
+    },
+    {
+      "title": "تست ۱",
+      "date": "2026-07-06",
+      "description": "تست ۱",
+      "classId": 1,
+      "createdAt": "2026-07-04T17:48:10.115Z",
+      "id": "MOyInPrPCVw"
     }
   ],
   "attendance": [
@@ -326,14 +343,14 @@ dist-ssr
       "sessionId": 1,
       "classId": 1,
       "studentId": 6,
-      "status": "present"
+      "status": "late"
     },
     {
       "id": "a2",
       "sessionId": 1,
       "classId": 1,
       "studentId": 7,
-      "status": "late"
+      "status": "absent"
     },
     {
       "id": "a3",
@@ -422,39 +439,80 @@ dist-ssr
   ],
   "announcements": [
     {
-      "id": 1,
+      "id": "1",
       "title": "اطلاعیه عمومی برای همه",
       "content": "این یک اطلاعیه عمومی است که برای همه کاربران قابل مشاهده است.",
       "classId": 0,
       "authorId": 1,
       "createdAt": "2025-07-01T10:00:00.000Z",
-      "seenBy": [3, 4],
-      "targetRoles": ["student", "teacher"]
+      "seenBy": [
+        3,
+        4
+      ],
+      "targetRoles": [
+        "student",
+        "teacher"
+      ]
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "اطلاعیه مخصوص دانشجویان کلاس React",
       "content": "این اطلاعیه فقط برای دانشجویان کلاس پیشرفته React است.",
       "classId": 1,
       "authorId": 3,
       "createdAt": "2025-07-05T10:00:00.000Z",
-      "seenBy": [],
+      "seenBy": [
+        "3",
+        "6"
+      ],
       "targetAudience": "students"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "اطلاعیه مخصوص استاد کلاس Node",
       "content": "این اطلاعیه فقط برای استاد کلاس Backend است.",
       "classId": 2,
       "authorId": 4,
       "createdAt": "2025-07-10T10:00:00.000Z",
-      "seenBy": [],
+      "seenBy": [
+        "1"
+      ],
       "targetAudience": "teacher"
+    },
+    {
+      "title": "تست ۱",
+      "content": "تست ۱",
+      "classId": 0,
+      "authorId": "1",
+      "targetRoles": [
+        "admin",
+        "teacher",
+        "student"
+      ],
+      "seenBy": [
+        "6",
+        "1"
+      ],
+      "createdAt": "2026-07-04T17:44:26.700Z",
+      "id": "kA2r7dyFim4"
+    },
+    {
+      "title": "تست دیده شدن",
+      "content": "تست دیده شدن توسط دانشجویان",
+      "classId": "1",
+      "authorId": "1",
+      "targetAudience": "students",
+      "seenBy": [
+        "6",
+        "1"
+      ],
+      "createdAt": "2026-07-04T18:14:22.877Z",
+      "id": "bWageD_NRTU"
     }
   ],
   "assignments": [
     {
-      "id": 1,
+      "id": "1",
       "title": "تکلیف 1: React Hooks",
       "description": "یک کامپوننت با useState و useEffect پیاده‌سازی کنید.",
       "classId": 1,
@@ -462,7 +520,7 @@ dist-ssr
       "deadline": "2025-08-25T23:59:59.000Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "تکلیف 2: Express API",
       "description": "یک REST API ساده برای مدیریت کاربران بنویسید.",
       "classId": 2,
@@ -477,9 +535,10 @@ dist-ssr
       "studentId": 7,
       "content": "https://github.com/mh419421/react-hooks-hw",
       "submittedAt": "2025-08-20T14:30:00.000Z",
-      "status": "submitted",
-      "grade": null,
-      "feedback": null
+      "status": "graded",
+      "grade": 18,
+      "feedback": "عالی بود",
+      "updatedAt": "2026-07-04T17:50:44.835Z"
     },
     {
       "id": "s2",
@@ -491,6 +550,24 @@ dist-ssr
       "grade": 14,
       "feedback": "تاخیر داشتی ولی کد خوب بود.",
       "updatedAt": "2025-08-27T09:00:00.000Z"
+    },
+    {
+      "assignmentId": 2,
+      "studentId": 6,
+      "content": "test 1",
+      "status": "submitted",
+      "submittedAt": "2026-07-04T18:06:35.454Z",
+      "id": "q2lzEnE1spE",
+      "updatedAt": "2026-07-04T18:06:49.558Z"
+    },
+    {
+      "assignmentId": 1,
+      "studentId": 6,
+      "content": "تست ۲3",
+      "status": "submitted",
+      "submittedAt": "2026-07-04T18:07:08.526Z",
+      "id": "qkrACzmpOoo",
+      "updatedAt": "2026-07-04T18:07:14.046Z"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
@@ -682,7 +759,6 @@ export default defineConfig([
 
 <file path="src/App.tsx">
 import { Routes, Route, Navigate, Outlet } from "react-router-dom";
-
 import MainLayout from "#/layouts/MainLayout.tsx";
 import DashboardPage from "#/pages/dashboard/DashboardPage.tsx";
 import UsersPage from "#/pages/users/UsersPage.tsx";
@@ -702,11 +778,8 @@ import SubmissionsPage from "#/pages/assignments/SubmissionsPage.tsx";
 function App() {
   return (
     <Routes>
-      {/* مسیرهای عمومی */}
       <Route path="/login" element={<LoginPage />} />
       <Route path="/unauthorized" element={<UnauthorizedPage />} />
-
-      {/* Layout Route برای صفحات محافظت‌شده */}
       <Route
         element={
           <ProtectedRoute>
@@ -717,7 +790,6 @@ function App() {
         }
       >
         <Route path="/" element={<DashboardPage />} />
-
         <Route
           path="users"
           element={
@@ -726,7 +798,6 @@ function App() {
             </RoleGuard>
           }
         />
-
         <Route
           path="classes"
           element={
@@ -735,8 +806,6 @@ function App() {
             </RoleGuard>
           }
         />
-
-        {/* ✅ مسیر جدید برای جزئیات کلاس */}
         <Route
           path="classes/:id"
           element={
@@ -745,7 +814,6 @@ function App() {
             </RoleGuard>
           }
         />
-
         <Route
           path="attendance"
           element={
@@ -754,7 +822,6 @@ function App() {
             </RoleGuard>
           }
         />
-
         <Route
           path="announcements"
           element={
@@ -763,9 +830,18 @@ function App() {
             </RoleGuard>
           }
         />
-
         <Route
           path="assignments"
+          element={
+            <RoleGuard allowedRoles={["admin", "teacher", "student"]}>
+              <AssignmentsPage />
+            </RoleGuard>
+          }
+        />
+
+        {/* ✅ اصلاح مسیر: دریافت classId به جای id مبهم */}
+        <Route
+          path="classes/:classId/assignments"
           element={
             <RoleGuard allowedRoles={["admin", "teacher", "student"]}>
               <AssignmentsPage />
@@ -781,7 +857,6 @@ function App() {
             </RoleGuard>
           }
         />
-
         <Route
           path="profile"
           element={
@@ -791,14 +866,11 @@ function App() {
           }
         />
       </Route>
-
-      {/* ریدایرکت و صفحات خطا */}
       <Route path="/home" element={<Navigate to="/" replace />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 }
-
 export default App;
 </file>
 
@@ -851,14 +923,16 @@ function Header() {
   };
 
   return (
-    <header className="flex h-16 items-center justify-between border-b border-gray-200 bg-white px-6">
+    <header className="flex h-16 items-center justify-between border-b border-gray-200 bg-white px-4 sm:px-6">
       <div>
-        <h1 className="text-xl font-bold text-blue-600">EduConnect</h1>
+        <h1 className="text-lg sm:text-xl font-bold text-blue-600">
+          EduConnect
+        </h1>
       </div>
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-2 sm:gap-3">
         {isAuthenticated && user ? (
           <>
-            <div className="text-sm text-gray-600">
+            <div className="hidden sm:block text-sm text-gray-600">
               {user.name} ({getRoleLabel(user.role)})
             </div>
             <Button variant="secondary" onClick={handleLogout}>
@@ -934,7 +1008,7 @@ function Sidebar() {
     <>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-4 right-4 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 text-white shadow-lg md:hidden"
+        className="fixed bottom-4 left-4 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 text-white shadow-lg md:hidden"
         aria-label="منو"
       >
         <svg
@@ -960,12 +1034,14 @@ function Sidebar() {
           )}
         </svg>
       </button>
+
       {isOpen && (
         <div
           className="fixed inset-0 z-30 bg-black/50 md:hidden"
           onClick={() => setIsOpen(false)}
         />
       )}
+
       <aside
         className={`fixed inset-y-0 right-0 z-40 w-64 transform border-l border-gray-200 bg-white p-4 transition-transform duration-200 ease-in-out md:static md:translate-x-0 ${
           isOpen ? "translate-x-0" : "translate-x-full"
@@ -1326,7 +1402,7 @@ interface TableProps<T> {
 function Table<T>({ columns, data, getRowKey }: TableProps<T>) {
   return (
     <div className="overflow-x-auto rounded-xl border border-gray-200 bg-white">
-      <table className="min-w-full text-left text-sm">
+      <table className="min-w-full text-center text-sm">
         <thead className="bg-gray-50">
           <tr>
             {columns.map((column) => (
@@ -1348,7 +1424,7 @@ function Table<T>({ columns, data, getRowKey }: TableProps<T>) {
               {columns.map((column) => (
                 <td
                   key={String(column.key)}
-                  className="px-3 py-3 text-gray-600 sm:px-4"
+                  className="px-3 py-3 text-gray-600 sm:px-4 m-auto"
                 >
                   {column.render
                     ? column.render(item)
@@ -1541,13 +1617,13 @@ import Textarea from "#/components/ui/Textarea.tsx";
 import { announcementService } from "#/services/modules/announcementService.ts";
 import type { Announcement, TargetAudience } from "#/types/announcement.ts";
 import type { ClassItem } from "#/types/class.ts";
-import type { UserRole } from "#/types/common.ts";
+import type { ID, UserRole } from "#/types/common.ts";
 
 interface Props {
   isOpen: boolean;
   initialData?: Announcement | null;
-  classes: ClassItem[]; // کلاس‌های فیلتر شده از قبل
-  authorId: number;
+  classes: ClassItem[];
+  authorId: ID;
   userRole: UserRole;
   onClose: () => void;
   onSuccess: () => void;
@@ -1564,7 +1640,9 @@ export default function AnnouncementForm({
 }: Props) {
   const [title, setTitle] = useState(initialData?.title ?? "");
   const [content, setContent] = useState(initialData?.content ?? "");
-  const [classId, setClassId] = useState<number>(initialData?.classId ?? 0);
+  const [classId, setClassId] = useState<number | string>(
+    initialData?.classId ?? 0,
+  );
   const [targetRoles, setTargetRoles] = useState<UserRole[]>(
     initialData?.targetRoles ?? ["admin", "teacher", "student"],
   );
@@ -1581,6 +1659,7 @@ export default function AnnouncementForm({
       setError("عنوان و محتوا الزامی است.");
       return;
     }
+
     try {
       setIsSubmitting(true);
       const basePayload = {
@@ -1590,9 +1669,8 @@ export default function AnnouncementForm({
         authorId,
       };
 
-      // ✅ اصلاح تایپ‌اسکریپت با تعیین نوع Partial<Announcement> و cast کردن مقدار
       const payload: Partial<Announcement> = isAdmin
-        ? classId === 0
+        ? classId === 0 || classId === "0"
           ? { ...basePayload, targetRoles, targetAudience: undefined }
           : { ...basePayload, targetAudience, targetRoles: undefined }
         : {
@@ -1623,7 +1701,6 @@ export default function AnnouncementForm({
     );
   };
 
-  // گزینه‌های کلاس: مدیر همه را می‌بیند، استاد فقط کلاس‌های خودش را (بدون عمومی)
   const classOptions = isAdmin
     ? [
         { label: "همه (عمومی)", value: 0 },
@@ -1647,12 +1724,11 @@ export default function AnnouncementForm({
         <Select
           label="مخاطب (کلاس)"
           value={classId}
-          onChange={(e) => setClassId(Number(e.target.value))}
+          onChange={(e) => setClassId(e.target.value)}
           options={classOptions}
         />
 
-        {/* بخش targetRoles فقط برای مدیر و فقط وقتی کلاس عمومی است */}
-        {isAdmin && classId === 0 && (
+        {isAdmin && (classId === 0 || classId === "0") && (
           <div className="space-y-2">
             <label className="text-sm font-medium text-gray-700">
               قابل مشاهده برای (نقش‌ها):
@@ -1682,8 +1758,7 @@ export default function AnnouncementForm({
           </div>
         )}
 
-        {/* بخش targetAudience فقط برای مدیر و فقط وقتی کلاس خاص است */}
-        {isAdmin && classId !== 0 && (
+        {isAdmin && classId !== 0 && classId !== "0" && (
           <div className="space-y-2">
             <label className="text-sm font-medium text-gray-700">
               مخاطبان در کلاس:
@@ -1709,7 +1784,9 @@ export default function AnnouncementForm({
           rows={5}
           placeholder="متن اطلاعیه..."
         />
+
         {error && <p className="text-sm text-red-600">{error}</p>}
+
         <div className="flex justify-end gap-2 pt-2">
           <Button variant="secondary" onClick={onClose}>
             انصراف
@@ -1760,9 +1837,8 @@ export default function AnnouncementsPage() {
   const canManageItem = (item: Announcement) => {
     if (!currentUser) return false;
     if (currentUser.role === "admin") return true;
-    if (currentUser.role === "teacher") {
+    if (currentUser.role === "teacher")
       return String(item.authorId) === String(currentUser.id);
-    }
     return false;
   };
 
@@ -1790,59 +1866,37 @@ export default function AnnouncementsPage() {
 
   useEffect(() => {
     let ignore = false;
-    Promise.all([
-      announcementService.getAll(),
-      classService.getAll(),
-      userService.getAll(),
-    ])
-      .then(([a, c, u]) => {
-        if (!ignore) {
-          setAnnouncements(
-            a.sort(
-              (x, y) =>
-                new Date(y.createdAt).getTime() -
-                new Date(x.createdAt).getTime(),
-            ),
-          );
-          setClasses(c);
-          setUsers(u);
-        }
-      })
-      .catch(() => {
-        // مدیریت خطا
-      })
-      .finally(() => {
-        if (!ignore) setLoading(false);
-      });
-
+    const loadData = async () => {
+      if (!ignore) await fetchData();
+    };
+    loadData();
     return () => {
       ignore = true;
     };
   }, []);
 
-  // ✅ کلاس‌های قابل انتخاب برای فرم: مدیر همه، استاد فقط کلاس‌های خودش
   const formClasses = useMemo(() => {
     if (isAdmin) return classes;
-    if (isTeacher && currentUser) {
+    if (isTeacher && currentUser)
       return classes.filter(
         (c) => String(c.teacherId) === String(currentUser.id),
       );
-    }
     return [];
   }, [classes, isAdmin, isTeacher, currentUser]);
 
   const filteredAnnouncements = useMemo(() => {
     if (!currentUser) return [];
-
     return announcements.filter((a) => {
-      // 1. Public Announcements (classId === 0)
-      if (a.classId === 0) {
+      if (currentUser.role === "admin") return true;
+
+      if (a.classId === 0 || a.classId === "0") {
         const roles = a.targetRoles ?? ["admin", "teacher", "student"];
         return roles.includes(currentUser.role);
       }
 
-      // 2. Class-specific Announcements
-      const targetClass = classes.find((c) => c.id === a.classId);
+      const targetClass = classes.find(
+        (c) => String(c.id) === String(a.classId),
+      );
       if (!targetClass) return false;
 
       const audience = a.targetAudience ?? "students";
@@ -1857,23 +1911,23 @@ export default function AnnouncementsPage() {
       if (audience === "both")
         return isTeacherOfThisClass || isStudentInThisClass;
 
+      // اگر نویسنده خود کاربر است، در هر صورت ببیند
+      if (String(a.authorId) === String(currentUser.id)) return true;
+
       return false;
     });
   }, [announcements, classes, currentUser]);
 
-  const getAuthorName = (authorId: number | string) => {
-    return (
-      users.find((u) => String(u.id) === String(authorId))?.name ?? "نامشخص"
-    );
-  };
-
-  const getClassName = (classId: number) => {
-    if (classId === 0) return "همه (عمومی)";
-    return classes.find((c) => c.id === classId)?.title ?? "نامشخص";
-  };
+  const getAuthorName = (authorId: number | string) =>
+    users.find((u) => String(u.id) === String(authorId))?.name ?? "نامشخص";
+  const getClassName = (classId: number | string) =>
+    classId === 0 || classId === "0"
+      ? "همه (عمومی)"
+      : (classes.find((c) => String(c.id) === String(classId))?.title ??
+        "نامشخص");
 
   const getTargetDescription = (item: Announcement) => {
-    if (item.classId === 0) {
+    if (item.classId === 0 || item.classId === "0") {
       const roles = item.targetRoles ?? ["admin", "teacher", "student"];
       return roles
         .map((r) =>
@@ -1920,7 +1974,6 @@ export default function AnnouncementsPage() {
         <h1 className="text-xl font-bold text-gray-800 sm:text-2xl">
           اطلاعیه‌ها
         </h1>
-        {/* ✅ فقط مدیر و استاد می‌توانند اطلاعیه جدید ایجاد کنند */}
         {canCreate && (
           <Button
             onClick={() => {
@@ -1949,9 +2002,7 @@ export default function AnnouncementsPage() {
                 <div className="flex flex-col h-full">
                   <div className="flex items-start justify-between gap-2 mb-2">
                     <h3
-                      className={`text-lg font-semibold ${
-                        isSeen ? "text-gray-600" : "text-blue-700"
-                      }`}
+                      className={`text-lg font-semibold ${isSeen ? "text-gray-600" : "text-blue-700"}`}
                     >
                       {item.title}
                       {isSeen ? (
@@ -2018,9 +2069,9 @@ export default function AnnouncementsPage() {
         key={`announcement-form-${editingItem?.id ?? "new"}-${isFormOpen}`}
         isOpen={isFormOpen}
         initialData={editingItem}
-        classes={formClasses} // ✅ ارسال کلاس‌های فیلتر شده
+        classes={formClasses}
         authorId={currentUser?.id ?? 0}
-        userRole={currentUser?.role ?? "student"} // ✅ ارسال نقش کاربر
+        userRole={currentUser?.role ?? "student"}
         onClose={() => {
           setIsFormOpen(false);
           setEditingItem(null);
@@ -2110,13 +2161,14 @@ export default function AssignmentForm({
     initialData?.description ?? "",
   );
   const [classId, setClassId] = useState<number>(
-    initialData?.classId ?? availableClasses[0]?.id ?? 0,
+    Number(initialData?.classId ?? availableClasses[0]?.id ?? 0),
   );
   const [deadline, setDeadline] = useState(
     initialData?.deadline
       ? new Date(initialData.deadline).toISOString().split("T")[0]
       : "",
   );
+
   const [error, setError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -2131,6 +2183,7 @@ export default function AssignmentForm({
       const finalTeacherId = isAdmin
         ? (selectedClass?.teacherId ?? teacherId)
         : teacherId;
+
       const payload = {
         title: title.trim(),
         description: description.trim(),
@@ -2138,6 +2191,7 @@ export default function AssignmentForm({
         teacherId: finalTeacherId,
         deadline: new Date(deadline).toISOString(),
       };
+
       if (initialData) {
         await assignmentService.update(initialData.id, payload);
       } else {
@@ -2224,37 +2278,50 @@ import type { User } from "#/types/user.ts";
 import AssignmentForm from "./AssignmentForm";
 import SubmissionForm from "./SubmissionForm";
 
+type PageState = {
+  loading: boolean;
+  error: string;
+  assignments: Assignment[];
+  submissions: Submission[];
+  users: User[];
+  classes: ClassItem[];
+};
+
+const initialState: PageState = {
+  loading: true,
+  error: "",
+  assignments: [],
+  submissions: [],
+  users: [],
+  classes: [],
+};
+
 export default function AssignmentsPage() {
-  const { id: classIdParam } = useParams<{ id?: string }>();
+  const { classId: classIdParam } = useParams<{ classId?: string }>();
   const navigate = useNavigate();
   const { user: currentUser } = useAuth();
-
-  const [assignments, setAssignments] = useState<Assignment[]>([]);
-  const [submissions, setSubmissions] = useState<Submission[]>([]);
-  const [users, setUsers] = useState<User[]>([]);
-  const [classes, setClasses] = useState<ClassItem[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
+  const [state, setState] = useState<PageState>(initialState);
   const [actionMessage, setActionMessage] = useState("");
-
   const [showAssignmentForm, setShowAssignmentForm] = useState(false);
   const [editingAssignment, setEditingAssignment] = useState<Assignment | null>(
     null,
   );
   const [deleteAssignmentTarget, setDeleteAssignmentTarget] =
     useState<Assignment | null>(null);
-
   const [showSubmissionForm, setShowSubmissionForm] = useState(false);
   const [submissionToEdit, setSubmissionToEdit] = useState<Submission | null>(
     null,
   );
+  const [submittingAssignment, setSubmittingAssignment] =
+    useState<Assignment | null>(null);
 
   const classId = classIdParam ? Number(classIdParam) : null;
   const isClassPage = !!classIdParam;
-
   const isAdmin = currentUser?.role === "admin";
   const isTeacher = currentUser?.role === "teacher";
   const isStudent = currentUser?.role === "student";
+
+  const { loading, error, assignments, submissions, users, classes } = state;
 
   const myClasses = useMemo(() => {
     if (!currentUser) return [];
@@ -2270,91 +2337,76 @@ export default function AssignmentsPage() {
     return [];
   }, [classes, currentUser, isAdmin, isTeacher, isStudent]);
 
-  const canViewAssignment = () => true;
-
   const canManageAssignment = (a: Assignment) => {
+    if (isAdmin) return true;
     if (isTeacher) return String(a.teacherId) === String(currentUser?.id);
     return false;
   };
 
   const fetchData = async () => {
-    try {
-      setError("");
-      const [usersData, submissionsData, classesData, assignmentsData] =
-        await Promise.all([
-          userService.getAll(),
-          submissionService.getAll(),
-          classService.getAll(),
-          assignmentService.getAll(),
-        ]);
-      setUsers(usersData);
-      setSubmissions(submissionsData);
-      setClasses(classesData);
-      setAssignments(assignmentsData);
-    } catch {
-      setError("خطا در بارگذاری داده‌ها.");
-    } finally {
-      setLoading(false);
-    }
+    const [usersData, submissionsData, classesData, assignmentsData] =
+      await Promise.all([
+        userService.getAll(),
+        submissionService.getAll(),
+        classService.getAll(),
+        assignmentService.getAll(),
+      ]);
+    return { usersData, submissionsData, classesData, assignmentsData };
   };
 
   useEffect(() => {
     let ignore = false;
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setLoading(true);
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setError("");
-
-    Promise.all([
-      userService.getAll(),
-      submissionService.getAll(),
-      classService.getAll(),
-      assignmentService.getAll(),
-    ])
-      .then(([usersData, submissionsData, classesData, assignmentsData]) => {
+    async function load() {
+      try {
+        const data = await fetchData();
         if (!ignore) {
-          setUsers(usersData);
-          setSubmissions(submissionsData);
-          setClasses(classesData);
-          setAssignments(assignmentsData);
+          setState({
+            loading: false,
+            error: "",
+            users: data.usersData,
+            submissions: data.submissionsData,
+            classes: data.classesData,
+            assignments: data.assignmentsData,
+          });
         }
-      })
-      .catch(() => {
-        if (!ignore) setError("خطا در بارگذاری داده‌ها.");
-      })
-      .finally(() => {
-        if (!ignore) setLoading(false);
-      });
-
+      } catch (err) {
+        if (!ignore)
+          setState((prev) => ({
+            ...prev,
+            loading: false,
+            error: `خطا در بارگذاری داده‌ها: ${err}`,
+          }));
+      }
+    }
+    load();
     return () => {
       ignore = true;
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const getSubmissionForUser = (assignmentId: number | string) => {
-    return submissions.find(
+  const getSubmissionForUser = (assignmentId: number | string) =>
+    submissions.find(
       (s) =>
         String(s.assignmentId) === String(assignmentId) &&
         String(s.studentId) === String(currentUser?.id),
     );
-  };
 
-  const getTeacherName = (teacherId: number | string) => {
-    return users.find((u) => String(u.id) === String(teacherId))?.name ?? "—";
-  };
+  const getTeacherName = (teacherId: number | string) =>
+    users.find((u) => String(u.id) === String(teacherId))?.name ?? "—";
+  const getClassName = (cId: number | string) =>
+    classes.find((c) => String(c.id) === String(cId))?.title ?? "—";
 
-  const getClassName = (cId: number | string) => {
-    return classes.find((c) => String(c.id) === String(cId))?.title ?? "—";
-  };
-
-  const handleViewSubmissions = (assignmentId: number | string) => {
+  const handleViewSubmissions = (assignmentId: number | string) =>
     navigate(`/assignments/${assignmentId}/submissions`);
-  };
 
+  // const handleSubmit = (assignment: Assignment) => {
+  //   const existing = getSubmissionForUser(assignment.id);
+  //   setSubmissionToEdit(existing || null);
+  //   setShowSubmissionForm(true);
+  // };
   const handleSubmit = (assignment: Assignment) => {
-    const existing = getSubmissionForUser(assignment.id);
-    setSubmissionToEdit(existing || null);
+    setSubmissionToEdit(getSubmissionForUser(assignment.id) || null);
+    setSubmittingAssignment(assignment);
     setShowSubmissionForm(true);
   };
 
@@ -2367,7 +2419,25 @@ export default function AssignmentsPage() {
       setActionMessage(message);
       setTimeout(() => setActionMessage(""), 3000);
     }
-    fetchData();
+    setState((prev) => ({ ...prev, loading: true }));
+    fetchData()
+      .then((data) =>
+        setState({
+          loading: false,
+          error: "",
+          users: data.usersData,
+          submissions: data.submissionsData,
+          classes: data.classesData,
+          assignments: data.assignmentsData,
+        }),
+      )
+      .catch(() =>
+        setState((prev) => ({
+          ...prev,
+          loading: false,
+          error: "خطا در به‌روزرسانی داده‌ها.",
+        })),
+      );
   };
 
   const handleDeleteAssignment = async () => {
@@ -2377,7 +2447,7 @@ export default function AssignmentsPage() {
       setDeleteAssignmentTarget(null);
       handleSuccess("تکلیف با موفقیت حذف شد.");
     } catch {
-      setError("حذف تکلیف با خطا مواجه شد.");
+      setState((prev) => ({ ...prev, error: "حذف تکلیف با خطا مواجه شد." }));
     }
   };
 
@@ -2385,9 +2455,21 @@ export default function AssignmentsPage() {
   if (error) return <div className="text-red-600 p-4">{error}</div>;
 
   const filteredAssignments = assignments.filter((a) => {
-    if (!canViewAssignment()) return false;
     if (isClassPage && classId && String(a.classId) !== String(classId))
       return false;
+
+    if (isStudent) {
+      const cls = classes.find((c) => String(c.id) === String(a.classId));
+      if (
+        !cls ||
+        !(cls.studentIds || []).map(String).includes(String(currentUser?.id))
+      )
+        return false;
+    } else if (isTeacher) {
+      const cls = classes.find((c) => String(c.id) === String(a.classId));
+      if (!cls || String(cls.teacherId) !== String(currentUser?.id))
+        return false;
+    }
     return true;
   });
 
@@ -2395,11 +2477,9 @@ export default function AssignmentsPage() {
     <div className="space-y-4 sm:space-y-6">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <h1 className="text-xl font-bold text-gray-800 sm:text-2xl">
-          {isClassPage
-            ? `تکالیف کلاس: ${classes.find((c) => String(c.id) === String(classId))?.title}`
-            : "تکالیف"}
+          {isClassPage ? `تکالیف کلاس: ${getClassName(classId!)}` : "تکالیف"}
         </h1>
-        {isTeacher && (
+        {(isAdmin || isTeacher) && (
           <Button
             onClick={() => {
               setEditingAssignment(null);
@@ -2454,89 +2534,22 @@ export default function AssignmentsPage() {
                   title: "وضعیت",
                   render: (a) => {
                     if (isStudent) {
-                      const submission = getSubmissionForUser(a.id);
-                      if (submission)
-                        return <StatusChip status={submission.status} />;
-                      return <span className="text-gray-500">ارسال نشده</span>;
+                      const sub = getSubmissionForUser(a.id);
+                      return sub ? (
+                        <StatusChip status={sub.status} />
+                      ) : (
+                        <span className="text-gray-500">ارسال نشده</span>
+                      );
                     }
-                    if (isTeacher && canManageAssignment(a)) {
-                      const assignmentSubmissions = submissions.filter(
+                    if ((isAdmin || isTeacher) && canManageAssignment(a)) {
+                      const subs = submissions.filter(
                         (s) => String(s.assignmentId) === String(a.id),
                       );
-                      const gradedCount = assignmentSubmissions.filter(
-                        (s) => s.status === "graded",
-                      ).length;
                       return (
                         <span className="text-sm text-gray-600">
-                          {gradedCount}/{assignmentSubmissions.length} نمره داده
-                          شده
+                          {subs.filter((s) => s.status === "graded").length}/
+                          {subs.length} نمره داده شده
                         </span>
-                      );
-                    }
-                    return <span className="text-gray-500">—</span>;
-                  },
-                },
-                {
-                  key: "grade",
-                  title: "نمره و بازخورد",
-                  render: (a) => {
-                    if (isStudent) {
-                      const submission = getSubmissionForUser(a.id);
-                      if (submission && submission.status === "graded") {
-                        return (
-                          <div className="text-sm">
-                            <div className="font-bold text-green-700">
-                              {submission.grade}/20
-                            </div>
-                            {submission.feedback && (
-                              <div
-                                className="text-xs text-gray-500 mt-1 max-w-xs truncate"
-                                title={submission.feedback}
-                              >
-                                {submission.feedback}
-                              </div>
-                            )}
-                          </div>
-                        );
-                      }
-                      if (submission && submission.status === "submitted") {
-                        return (
-                          <span className="text-yellow-600 text-xs">
-                            در انتظار نمره
-                          </span>
-                        );
-                      }
-                      return <span className="text-gray-500">—</span>;
-                    }
-                    if (isTeacher && canManageAssignment(a)) {
-                      const assignmentSubmissions = submissions.filter(
-                        (s) => String(s.assignmentId) === String(a.id),
-                      );
-                      if (assignmentSubmissions.length === 0)
-                        return (
-                          <span className="text-gray-500">پاسخی نیست</span>
-                        );
-                      const gradedSubs = assignmentSubmissions.filter(
-                        (s) => s.status === "graded" && s.grade !== null,
-                      );
-                      if (gradedSubs.length === 0)
-                        return (
-                          <span className="text-yellow-600 text-xs">
-                            نمره‌ای ثبت نشده
-                          </span>
-                        );
-                      const avgGrade =
-                        gradedSubs.reduce((sum, s) => sum + (s.grade ?? 0), 0) /
-                        gradedSubs.length;
-                      return (
-                        <div className="text-sm">
-                          <div className="font-bold text-blue-700">
-                            میانگین: {avgGrade.toFixed(1)}/20
-                          </div>
-                          <div className="text-xs text-gray-500">
-                            از {gradedSubs.length} پاسخ
-                          </div>
-                        </div>
                       );
                     }
                     return <span className="text-gray-500">—</span>;
@@ -2546,35 +2559,30 @@ export default function AssignmentsPage() {
                   key: "actions",
                   title: "عملیات",
                   render: (a) => {
-                    const submission = getSubmissionForUser(a.id);
-                    const isGraded = submission?.status === "graded";
+                    const sub = getSubmissionForUser(a.id);
+                    const isGraded = sub?.status === "graded";
                     return (
                       <div className="flex flex-wrap gap-2">
-                        {isStudent && (
-                          <>
-                            {!submission && (
-                              <Button
-                                variant="secondary"
-                                onClick={() => handleSubmit(a)}
-                              >
-                                ارسال پاسخ
-                              </Button>
-                            )}
-                            {submission && !isGraded && (
-                              <Button
-                                variant="secondary"
-                                onClick={() => handleSubmit(a)}
-                              >
-                                ویرایش پاسخ
-                              </Button>
-                            )}
-                            {isGraded && (
-                              <span className="text-xs text-gray-500 py-2">
-                                نمره نهایی شده
-                              </span>
-                            )}
-                          </>
-                        )}
+                        {isStudent &&
+                          (!sub ? (
+                            <Button
+                              variant="secondary"
+                              onClick={() => handleSubmit(a)}
+                            >
+                              ارسال پاسخ
+                            </Button>
+                          ) : !isGraded ? (
+                            <Button
+                              variant="secondary"
+                              onClick={() => handleSubmit(a)}
+                            >
+                              ویرایش پاسخ
+                            </Button>
+                          ) : (
+                            <span className="text-xs text-gray-500 py-2">
+                              نمره نهایی شده
+                            </span>
+                          ))}
                         {canManageAssignment(a) && (
                           <>
                             <Button
@@ -2626,8 +2634,11 @@ export default function AssignmentsPage() {
       {showSubmissionForm && currentUser && (
         <SubmissionForm
           isOpen={true}
+          // assignmentId={
+          //   submissionToEdit?.assignmentId ?? editingAssignment?.id ?? 0
+          // }
           assignmentId={
-            submissionToEdit?.assignmentId ?? editingAssignment?.id ?? 0
+            submissionToEdit?.assignmentId ?? submittingAssignment?.id ?? 0
           }
           studentId={Number(currentUser.id)}
           existingSubmission={submissionToEdit}
@@ -2756,7 +2767,6 @@ export default function SubmissionsPage() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const { user: currentUser } = useAuth();
-
   const [assignment, setAssignment] = useState<Assignment | null>(null);
   const [submissions, setSubmissions] = useState<Submission[]>([]);
   const [users, setUsers] = useState<User[]>([]);
@@ -2766,7 +2776,6 @@ export default function SubmissionsPage() {
   >({});
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-
   const assignmentId = id as string;
 
   useEffect(() => {
@@ -2778,11 +2787,17 @@ export default function SubmissionsPage() {
     ])
       .then(([a, s, u]) => {
         if (!ignore) {
-          const isTeacher = currentUser?.role === "teacher";
-          if (!(isTeacher && String(a.teacherId) === String(currentUser?.id))) {
+          const isAdmin = currentUser?.role === "admin";
+          const isTeacherOwner =
+            currentUser?.role === "teacher" &&
+            String(a.teacherId) === String(currentUser?.id);
+
+          // ✅ اصلاح دسترسی: ادمین هم باید بتواند نمرات را ببیند
+          if (!isAdmin && !isTeacherOwner) {
             navigate("/assignments", { replace: true });
             return;
           }
+
           setAssignment(a);
           setSubmissions(s);
           setUsers(u);
@@ -2810,10 +2825,8 @@ export default function SubmissionsPage() {
     };
   }, [assignmentId, navigate, currentUser]);
 
-  const getUserName = (userId: number | string) => {
-    return users.find((u) => String(u.id) === String(userId))?.name ?? "—";
-  };
-
+  const getUserName = (userId: number | string) =>
+    users.find((u) => String(u.id) === String(userId))?.name ?? "—";
   const handleGradeChange = (
     submissionId: string,
     field: "grade" | "feedback",
@@ -2843,13 +2856,13 @@ export default function SubmissionsPage() {
         feedback: data.feedback || null,
         status: "graded",
       });
-      setSuccessMessage(
-        "نمره با موفقیت ذخیره شد. در حال بازگشت به صفحه تکالیف...",
-      );
+      // setSuccessMessage("نمره با موفقیت ذخیره شد. در حال بازگشت...");
+      // setErrorMessage("");
+      // setTimeout(() => navigate("/assignments"), 1500);
+
+      setSuccessMessage("نمره با موفقیت ذخیره شد.");
       setErrorMessage("");
-      setTimeout(() => {
-        navigate("/assignments");
-      }, 1500);
+      // بدون navigate خودکار
     } catch {
       setErrorMessage("خطا در ثبت نمره.");
       setSuccessMessage("");
@@ -2866,7 +2879,6 @@ export default function SubmissionsPage() {
       <h1 className="text-xl font-bold text-gray-800">
         پاسخ‌های تکلیف: {assignment?.title}
       </h1>
-
       {successMessage && (
         <div className="rounded-lg border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-700">
           {successMessage}
@@ -3339,7 +3351,8 @@ export default function AttendancePage() {
 </file>
 
 <file path="src/pages/auth/LoginPage.tsx">
-import { useEffect, useRef, useState } from "react";
+// src/pages/auth/LoginPage.tsx
+import { useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import Button from "#/components/ui/Button.tsx";
 import Card from "#/components/ui/Card.tsx";
@@ -3349,14 +3362,10 @@ import { useAuth } from "#/context/AuthContext.ts";
 function LoginPage() {
   const navigate = useNavigate();
   const { login, isAuthenticated } = useAuth();
-  const emailRef = useRef<HTMLInputElement>(null);
+
   const [formData, setFormData] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-
-  useEffect(() => {
-    emailRef.current?.focus();
-  }, []);
 
   const handleChange = (field: "email" | "password", value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
@@ -3390,7 +3399,7 @@ function LoginPage() {
               placeholder="ایمیل خود را وارد کنید"
               value={formData.email}
               onChange={(e) => handleChange("email", e.target.value)}
-              ref={emailRef}
+              autoFocus
             />
             <Input
               label="رمز عبور"
@@ -3593,6 +3602,15 @@ export default function ClassDetailsPage() {
           </h1>
           <StatusChip status={classItem.status || "inactive"} />
         </div>
+
+        {/* ✅ اضافه شد: دکمه مشاهده تکالیف کلاس برای بهبود جریان داده */}
+        <Button
+          variant="secondary"
+          onClick={() => navigate(`/classes/${classId}/assignments`)}
+          className="w-full sm:w-auto"
+        >
+          مشاهده تکالیف کلاس
+        </Button>
       </div>
 
       {actionSuccess && (
@@ -3656,51 +3674,6 @@ export default function ClassDetailsPage() {
         </Card>
       </div>
 
-      {/* <Card title={`جلسات (${sessions.length})`}>
-        <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-sm text-gray-600">
-            لیست جلسات برگزار شده و برنامه‌ریزی شده
-          </p>
-          {canManage && classItem.status !== "inactive" && (
-            <Button
-              onClick={() => setShowSessionForm(true)}
-              className="w-full sm:w-auto"
-            >
-              افزودن جلسه
-            </Button>
-          )}
-        </div>
-        {sessions.length === 0 ? (
-          <EmptyState
-            title="جلسه‌ای ثبت نشده"
-            description="هنوز جلسه‌ای برای این کلاس تعریف نشده است."
-          />
-        ) : (
-          <div className="space-y-2">
-            {[...sessions]
-              .sort(
-                (a, b) =>
-                  new Date(a.date).getTime() - new Date(b.date).getTime(),
-              )
-              .map((s) => (
-                <div
-                  key={s.id}
-                  className="flex flex-col gap-2 rounded-lg border border-gray-200 bg-white px-4 py-3 sm:flex-row sm:items-center sm:justify-between"
-                >
-                  <div>
-                    <div className="font-medium text-gray-800">{s.title}</div>
-                    {s.description && (
-                      <div className="mt-1 text-xs text-gray-500">
-                        {s.description}
-                      </div>
-                    )}
-                  </div>
-                  <div className="text-sm text-gray-600">{s.date}</div>
-                </div>
-              ))}
-          </div>
-        )}
-      </Card> */}
       <Card title={`جلسات (${sessions.length})`}>
         <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-sm text-gray-600">
@@ -3782,6 +3755,7 @@ export default function ClassDetailsPage() {
 </file>
 
 <file path="src/pages/classes/ClassesPage.tsx">
+// src/pages/classes/ClassesPage.tsx
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import EmptyState from "#/components/common/EmptyState.tsx";
@@ -3815,7 +3789,6 @@ export default function ClassesPage() {
 
   const [showForm, setShowForm] = useState(false);
   const [editing, setEditing] = useState<ClassItem | null>(null);
-
   const [statusChangeTarget, setStatusChangeTarget] =
     useState<ClassItem | null>(null);
   const [deleteTarget, setDeleteTarget] = useState<ClassItem | null>(null);
@@ -3825,30 +3798,34 @@ export default function ClassesPage() {
 
   const isAdmin = currentUser?.role === "admin";
 
-  // ✅ تابع کمکی: آیا کاربر فعلی می‌تواند این کلاس را مدیریت کند؟
   const canManageClass = (c: ClassItem) => {
     if (isAdmin) return true;
-    if (currentUser?.role === "teacher") {
+    if (currentUser?.role === "teacher")
       return String(c.teacherId) === String(currentUser.id);
-    }
     return false;
+  };
+
+  const fetchData = async () => {
+    try {
+      const [classesData, usersData] = await Promise.all([
+        classService.getAll(),
+        userService.getAll(),
+      ]);
+      setClasses(classesData);
+      setUsers(usersData);
+    } catch {
+      setError("دریافت اطلاعات با خطا مواجه شد.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   useEffect(() => {
     let ignore = false;
-    Promise.all([classService.getAll(), userService.getAll()])
-      .then(([classesData, usersData]) => {
-        if (!ignore) {
-          setClasses(classesData);
-          setUsers(usersData);
-        }
-      })
-      .catch(() => {
-        if (!ignore) setError("دریافت اطلاعات با خطا مواجه شد.");
-      })
-      .finally(() => {
-        if (!ignore) setLoading(false);
-      });
+    const loadData = async () => {
+      if (!ignore) await fetchData();
+    };
+    loadData();
     return () => {
       ignore = true;
     };
@@ -3880,24 +3857,10 @@ export default function ClassesPage() {
     setActionSuccess("");
   };
 
-  const fetchData = async () => {
-    try {
-      const [classesData, usersData] = await Promise.all([
-        classService.getAll(),
-        userService.getAll(),
-      ]);
-      setClasses(classesData);
-      setUsers(usersData);
-    } catch {
-      setError("دریافت اطلاعات با خطا مواجه شد.");
-    }
-  };
-
   const handleStatusChangeClick = (classItem: ClassItem) => {
     resetMessages();
     setStatusChangeTarget(classItem);
   };
-
   const confirmStatusChange = async () => {
     if (!statusChangeTarget) return;
     try {
@@ -3920,7 +3883,6 @@ export default function ClassesPage() {
     resetMessages();
     setDeleteTarget(classItem);
   };
-
   const confirmDelete = async () => {
     if (!deleteTarget) return;
     try {
@@ -3939,7 +3901,6 @@ export default function ClassesPage() {
     setEditing(classItem);
     setShowForm(true);
   };
-
   const handleCreate = () => {
     resetMessages();
     setEditing(null);
@@ -3948,8 +3909,7 @@ export default function ClassesPage() {
 
   const getTeacherName = (teacherId: number | string | null | undefined) => {
     if (teacherId === null || teacherId === undefined) return "—";
-    const teacher = users.find((u) => String(u.id) === String(teacherId));
-    return teacher?.name ?? "—";
+    return users.find((u) => String(u.id) === String(teacherId))?.name ?? "—";
   };
 
   return (
@@ -3976,7 +3936,7 @@ export default function ClassesPage() {
         </div>
       )}
 
-      <div className="grid gap-3 rounded-xl border border-gray-200 bg-white p-3 sm:gap-4 sm:p-4 md:grid-cols-2 xl:grid-cols-4">
+      <div className="grid grid-cols-1 gap-3 rounded-xl border border-gray-200 bg-white p-3 sm:gap-4 sm:p-4 md:grid-cols-2 xl:grid-cols-4">
         <SearchInput
           label="جستجو"
           value={search}
@@ -4151,7 +4111,6 @@ export default function ClassesPage() {
         onClose={() => setStatusChangeTarget(null)}
         onConfirm={confirmStatusChange}
       />
-
       <ConfirmDialog
         isOpen={!!deleteTarget}
         title="حذف کلاس"
@@ -4194,8 +4153,12 @@ export default function ClassForm({
   onSuccess,
   onError,
 }: Props) {
-  const teachers = users.filter((u) => u.role === "teacher");
-  const students = users.filter((u) => u.role === "student");
+  const teachers = users.filter(
+    (u) => u.role === "teacher" && u.status === "active",
+  );
+  const students = users.filter(
+    (u) => u.role === "student" && u.status === "active",
+  );
 
   const [form, setForm] = useState<ClassFormValues>(() => ({
     title: initialData?.title || "",
@@ -4252,7 +4215,7 @@ export default function ClassForm({
         ...prev,
         studentIds: exists
           ? prev.studentIds.filter((s) => String(s) !== stringId)
-          : [...prev.studentIds, id as number],
+          : [...prev.studentIds, id],
       };
     });
     if (errors.students) setErrors((prev) => ({ ...prev, students: "" }));
@@ -5113,31 +5076,21 @@ function UsersPage() {
   const [actionError, setActionError] = useState("");
   const [actionSuccess, setActionSuccess] = useState("");
 
-  const fetchUsers = async () => {
-    try {
-      setError("");
-      const data = await userService.getAll();
-      setUsers(data);
-    } catch {
-      setError("دریافت لیست کاربران با خطا مواجه شد.");
-    } finally {
-      setLoading(false);
-    }
-  };
-
+  // ✅ اصلاح شد: انتقال منطق به داخل useEffect برای جلوگیری از خطای Exhaustive Deps
   useEffect(() => {
     let ignore = false;
-    userService
-      .getAll()
-      .then((data) => {
+    const loadUsers = async () => {
+      try {
+        setError("");
+        const data = await userService.getAll();
         if (!ignore) setUsers(data);
-      })
-      .catch(() => {
+      } catch {
         if (!ignore) setError("دریافت لیست کاربران با خطا مواجه شد.");
-      })
-      .finally(() => {
+      } finally {
         if (!ignore) setLoading(false);
-      });
+      }
+    };
+    loadUsers();
     return () => {
       ignore = true;
     };
@@ -5169,7 +5122,10 @@ function UsersPage() {
     await userService.create(values);
     setActionSuccess("کاربر با موفقیت ایجاد شد.");
     setIsCreateOpen(false);
-    await fetchUsers();
+    setLoading(true);
+    const data = await userService.getAll();
+    setUsers(data);
+    setLoading(false);
   };
 
   const handleOpenEdit = (user: User) => {
@@ -5188,7 +5144,10 @@ function UsersPage() {
     setActionSuccess("اطلاعات کاربر با موفقیت ویرایش شد.");
     setIsEditOpen(false);
     setSelectedUser(null);
-    await fetchUsers();
+    setLoading(true);
+    const data = await userService.getAll();
+    setUsers(data);
+    setLoading(false);
   };
 
   const handleOpenDelete = (user: User) => {
@@ -5201,14 +5160,16 @@ function UsersPage() {
     if (!selectedUser || !currentUser) return;
     try {
       resetMessages();
-      if (selectedUser.id === currentUser.id) {
+      if (selectedUser.id === currentUser.id)
         throw new Error("شما نمی‌توانید حساب کاربری خودتان را حذف کنید.");
-      }
       await userService.delete(selectedUser.id);
       setActionSuccess("کاربر با موفقیت حذف شد.");
       setIsDeleteConfirmOpen(false);
       setSelectedUser(null);
-      await fetchUsers();
+      setLoading(true);
+      const data = await userService.getAll();
+      setUsers(data);
+      setLoading(false);
     } catch (err) {
       setActionError(
         err instanceof Error ? err.message : "حذف کاربر ناموفق بود.",
@@ -5221,12 +5182,14 @@ function UsersPage() {
     if (!currentUser) return;
     try {
       resetMessages();
-      if (user.id === currentUser.id) {
+      if (user.id === currentUser.id)
         throw new Error("شما نمی‌توانید وضعیت حساب خودتان را تغییر دهید.");
-      }
       await userService.toggleStatus(user.id);
       setActionSuccess("وضعیت کاربر با موفقیت تغییر کرد.");
-      await fetchUsers();
+      setLoading(true);
+      const data = await userService.getAll();
+      setUsers(data);
+      setLoading(false);
     } catch (err) {
       setActionError(
         err instanceof Error ? err.message : "تغییر وضعیت کاربر ناموفق بود.",
@@ -5331,6 +5294,7 @@ function UsersPage() {
           setSelectedUser(null);
         }}
       />
+
       <ConfirmDialog
         isOpen={isDeleteConfirmOpen}
         title="حذف کاربر"
@@ -5353,10 +5317,11 @@ import Button from "#/components/ui/Button.tsx";
 import StatusChip from "#/components/ui/StatusChip.tsx";
 import Table from "#/components/ui/Table.tsx";
 import type { User } from "#/types/user.ts";
+import type { ID } from "#/types/common.ts";
 
 interface UserTableProps {
   users: User[];
-  currentUserId?: number;
+  currentUserId?: ID;
   onView: (user: User) => void;
   onEdit: (user: User) => void;
   onDelete: (user: User) => void;
@@ -5381,7 +5346,7 @@ function UserTable({
           render: (user) => (
             <div className="font-medium text-gray-800">
               {user.name}
-              {user.id === currentUserId && (
+              {String(user.id) === String(currentUserId) && (
                 <span className="mr-2 text-xs text-blue-600">(شما)</span>
               )}
             </div>
@@ -5571,7 +5536,7 @@ export default axiosInstance;
 </file>
 
 <file path="src/services/api/baseApi.ts">
-import axiosInstance from "#/services/api/axiosInstance.ts";
+import axiosInstance from "./axiosInstance";
 
 export const baseApi = {
   getAll: async <T>(endpoint: string): Promise<T[]> => {
@@ -5607,41 +5572,38 @@ export const baseApi = {
 <file path="src/services/modules/announcementService.ts">
 import { baseApi } from "#/services/api/baseApi.ts";
 import type { Announcement } from "#/types/announcement.ts";
+import type { ID } from "#/types/common.ts";
 
 const endpoint = "/announcements";
 
 export const announcementService = {
   getAll: () => baseApi.getAll<Announcement>(endpoint),
-
-  getById: (id: number) => baseApi.getById<Announcement>(endpoint, id),
-
+  getById: (id: ID) => baseApi.getById<Announcement>(endpoint, id),
   create: (data: Omit<Announcement, "id" | "createdAt" | "seenBy">) =>
     baseApi.create<Announcement>(endpoint, {
       ...data,
       seenBy: [],
       createdAt: new Date().toISOString(),
     }),
-
-  update: (id: number, data: Partial<Announcement>) =>
+  update: (id: ID, data: Partial<Announcement>) =>
     baseApi.update<Announcement>(endpoint, id, data),
-
-  delete: (id: number) => baseApi.delete(endpoint, id),
-
-  markAsSeen: async (id: number, userId: number) => {
+  delete: (id: ID) => baseApi.delete(endpoint, id),
+  markAsSeen: async (id: ID, userId: ID) => {
     const announcement = await baseApi.getById<Announcement>(endpoint, id);
-    if (!announcement.seenBy?.includes(userId)) {
+    const seenBy = announcement.seenBy ?? [];
+    if (!seenBy.some((uid) => String(uid) === String(userId))) {
       await baseApi.update<Announcement>(endpoint, id, {
-        seenBy: [...(announcement.seenBy ?? []), userId],
+        seenBy: [...seenBy, userId],
       });
     }
   },
-
-  resetSeenBy: async (id: number) => {
+  resetSeenBy: async (id: ID) => {
     await baseApi.update<Announcement>(endpoint, id, { seenBy: [] });
   },
-
-  isSeenBy: (announcement: Announcement, userId: number) => {
-    return announcement.seenBy?.includes(userId) ?? false;
+  isSeenBy: (announcement: Announcement, userId: ID) => {
+    return (announcement.seenBy ?? []).some(
+      (uid) => String(uid) === String(userId),
+    );
   },
 };
 </file>
@@ -5662,17 +5624,12 @@ export const assignmentService = {
   },
   create: (data: Omit<Assignment, "id">) =>
     baseApi.create<Assignment>(endpoint, data),
-  update: async (id: number | string, data: Partial<Assignment>) => {
-    const updated = await baseApi.update<Assignment>(endpoint, id, data);
-    const allSubmissions = await baseApi.getAll<Submission>("/submissions");
-    const relatedSubmissions = allSubmissions.filter(
-      (s) => String(s.assignmentId) === String(id),
-    );
-    for (const sub of relatedSubmissions) {
-      await baseApi.delete("/submissions", sub.id);
-    }
-    return updated;
+
+  // ✅ اصلاح شد: ویرایش تکلیف دیگر نباید پاسخ‌های دانشجویان را حذف کند
+  update: (id: number | string, data: Partial<Assignment>) => {
+    return baseApi.update<Assignment>(endpoint, id, data);
   },
+
   delete: async (id: number | string) => {
     const allSubmissions = await baseApi.getAll<Submission>("/submissions");
     const relatedSubmissions = allSubmissions.filter(
@@ -5805,29 +5762,30 @@ export async function loginUser(payload: LoginPayload): Promise<User> {
 <file path="src/services/modules/classService.ts">
 import { baseApi } from "#/services/api/baseApi.ts";
 import type { ClassItem, ClassFormValues } from "#/types/class.ts";
+import type { ID } from "#/types/common.ts";
 
 const endpoint = "/classes";
 
 export const classService = {
   getAll: () => baseApi.getAll<ClassItem>(endpoint),
-  getById: (id: number) => baseApi.getById<ClassItem>(endpoint, id),
+  getById: (id: ID) => baseApi.getById<ClassItem>(endpoint, id),
   create: (data: ClassFormValues) =>
     baseApi.create<ClassItem>(endpoint, {
       ...data,
       createdAt: new Date().toISOString(),
     }),
-  update: (id: number, data: Partial<ClassFormValues>) =>
+  update: (id: ID, data: Partial<ClassFormValues>) =>
     baseApi.update<ClassItem>(endpoint, id, {
       ...data,
       updatedAt: new Date().toISOString(),
     }),
-  delete: (id: number) => baseApi.delete(endpoint, id),
-  deactivate: (id: number) =>
+  delete: (id: ID) => baseApi.delete(endpoint, id),
+  deactivate: (id: ID) =>
     baseApi.update<ClassItem>(endpoint, id, {
       status: "inactive",
       updatedAt: new Date().toISOString(),
     }),
-  activate: (id: number) =>
+  activate: (id: ID) =>
     baseApi.update<ClassItem>(endpoint, id, {
       status: "active",
       updatedAt: new Date().toISOString(),
@@ -5838,27 +5796,24 @@ export const classService = {
 <file path="src/services/modules/sessionService.ts">
 import { baseApi } from "#/services/api/baseApi.ts";
 import type { Session, SessionFormValues } from "#/types/session.ts";
+import type { ID } from "#/types/common.ts";
 
 const endpoint = "/sessions";
 
 export const sessionService = {
   getAll: () => baseApi.getAll<Session>(endpoint),
-
-  getById: (id: number) => baseApi.getById<Session>(endpoint, id),
-
+  getById: (id: ID) => baseApi.getById<Session>(endpoint, id),
   create: (data: SessionFormValues) =>
     baseApi.create<Session>(endpoint, {
       ...data,
       createdAt: new Date().toISOString(),
     }),
-
-  update: (id: number, data: Partial<SessionFormValues>) =>
+  update: (id: ID, data: Partial<SessionFormValues>) =>
     baseApi.update<Session>(endpoint, id, {
       ...data,
       updatedAt: new Date().toISOString(),
     }),
-
-  delete: (id: number) => baseApi.delete(endpoint, id),
+  delete: (id: ID) => baseApi.delete(endpoint, id),
 };
 </file>
 
@@ -5907,7 +5862,7 @@ import type {
   UpdateUserPayload,
   User,
 } from "#/types/user.ts";
-import type { RecordStatus, UserRole } from "#/types/common.ts";
+import type { ID, RecordStatus, UserRole } from "#/types/common.ts";
 
 const endpoint = "/users";
 
@@ -5915,24 +5870,21 @@ async function getAllUsers(): Promise<User[]> {
   return baseApi.getAll<User>(endpoint);
 }
 
-async function getUserById(id: number): Promise<User> {
+async function getUserById(id: ID): Promise<User> {
   return baseApi.getById<User>(endpoint, id);
 }
 
 async function ensureEmailIsUnique(
   email: string,
-  excludeUserId?: number,
+  excludeUserId?: ID,
 ): Promise<void> {
   const users = await getAllUsers();
-
   const normalizedEmail = email.trim().toLowerCase();
-
   const duplicate = users.find(
     (user) =>
       user.email.trim().toLowerCase() === normalizedEmail &&
-      user.id !== excludeUserId,
+      String(user.id) !== String(excludeUserId),
   );
-
   if (duplicate) {
     throw new Error("این ایمیل قبلاً ثبت شده است.");
   }
@@ -5943,20 +5895,16 @@ async function getAdminUsers(): Promise<User[]> {
   return users.filter((user) => user.role === "admin");
 }
 
-async function ensureNotLastAdmin(userId: number): Promise<void> {
+async function ensureNotLastAdmin(userId: ID): Promise<void> {
   const users = await getAllUsers();
-  const targetUser = users.find((user) => user.id === userId);
-
+  const targetUser = users.find((user) => String(user.id) === String(userId));
   if (!targetUser) {
     throw new Error("کاربر موردنظر پیدا نشد.");
   }
-
   if (targetUser.role !== "admin") {
     return;
   }
-
   const adminUsers = users.filter((user) => user.role === "admin");
-
   if (adminUsers.length <= 1) {
     throw new Error("امکان حذف یا تغییر آخرین مدیر سیستم وجود ندارد.");
   }
@@ -5964,12 +5912,9 @@ async function ensureNotLastAdmin(userId: number): Promise<void> {
 
 export const userService = {
   getAll: getAllUsers,
-
   getById: getUserById,
-
   async create(data: CreateUserPayload): Promise<User> {
     await ensureEmailIsUnique(data.email);
-
     const payload: Omit<User, "id"> = {
       name: data.name.trim(),
       email: data.email.trim().toLowerCase(),
@@ -5977,18 +5922,14 @@ export const userService = {
       role: data.role,
       status: data.status,
     };
-
     return baseApi.create<User>(endpoint, payload);
   },
-  async update(id: number, data: UpdateUserPayload): Promise<User> {
+  async update(id: ID, data: UpdateUserPayload): Promise<User> {
     await ensureEmailIsUnique(data.email, id);
-
     const existingUser = await getUserById(id);
-
     if (existingUser.role === "admin" && data.role !== "admin") {
       await ensureNotLastAdmin(id);
     }
-
     if (
       existingUser.role === "admin" &&
       existingUser.status === "active" &&
@@ -5996,7 +5937,6 @@ export const userService = {
     ) {
       await ensureNotLastAdminIfDeactivating(existingUser);
     }
-
     const payload: User = {
       ...existingUser,
       name: data.name.trim(),
@@ -6004,42 +5944,32 @@ export const userService = {
       role: data.role,
       status: data.status,
     };
-
     return baseApi.update<User>(endpoint, id, payload);
   },
-
-  async delete(id: number): Promise<void> {
+  async delete(id: ID): Promise<void> {
     await ensureNotLastAdmin(id);
     await baseApi.delete(endpoint, id);
   },
-
-  async toggleStatus(id: number): Promise<User> {
+  async toggleStatus(id: ID): Promise<User> {
     const user = await getUserById(id);
-
     await ensureNotLastAdminIfDeactivating(user);
-
     const nextStatus: RecordStatus =
       user.status === "active" ? "inactive" : "active";
-
     return baseApi.update<User>(endpoint, id, {
       ...user,
       status: nextStatus,
     });
   },
-
-  async changeRole(id: number, role: UserRole): Promise<User> {
+  async changeRole(id: ID, role: UserRole): Promise<User> {
     const user = await getUserById(id);
-
     if (user.role === "admin" && role !== "admin") {
       await ensureNotLastAdmin(id);
     }
-
     return baseApi.update<User>(endpoint, id, {
       ...user,
       role,
     });
   },
-
   getAdminUsers,
 };
 
@@ -6047,14 +5977,11 @@ async function ensureNotLastAdminIfDeactivating(user: User): Promise<void> {
   if (user.role !== "admin") {
     return;
   }
-
   if (user.status === "inactive") {
     return;
   }
-
   const admins = await getAdminUsers();
   const activeAdmins = admins.filter((admin) => admin.status === "active");
-
   if (activeAdmins.length <= 1) {
     throw new Error("امکان غیرفعال‌سازی آخرین مدیر سیستم وجود ندارد.");
   }
@@ -6125,13 +6052,15 @@ export interface AuthContextType extends AuthState {
 </file>
 
 <file path="src/types/class.ts">
+import type { ID } from "./common";
+
 export type ClassStatus = "active" | "inactive";
 
 export interface ClassItem {
-  id: number;
+  id: ID;
   title: string;
-  teacherId: number | null;
-  studentIds: number[];
+  teacherId: ID | null;
+  studentIds: ID[];
   capacity: number;
   status: ClassStatus;
   description?: string;
@@ -6141,8 +6070,8 @@ export interface ClassItem {
 
 export interface ClassFormValues {
   title: string;
-  teacherId: number | null;
-  studentIds: number[];
+  teacherId: ID | null;
+  studentIds: ID[];
   capacity: number;
   status: ClassStatus;
   description?: string;
@@ -6150,7 +6079,7 @@ export interface ClassFormValues {
 </file>
 
 <file path="src/types/common.ts">
-export type ID = number;
+export type ID = number | string;
 
 export type UserRole = "admin" | "teacher" | "student";
 
@@ -6162,9 +6091,11 @@ export type SubmissionStatus = "submitted" | "graded" | "pending";
 </file>
 
 <file path="src/types/session.ts">
+import type { ID } from "./common";
+
 export interface Session {
-  id: number;
-  classId: number;
+  id: ID;
+  classId: ID;
   title: string;
   description?: string;
   date: string;
@@ -6174,7 +6105,7 @@ export interface Session {
 
 export interface SessionFormValues {
   title: string;
-  classId: number;
+  classId: ID;
   date: string;
   description?: string;
 }
