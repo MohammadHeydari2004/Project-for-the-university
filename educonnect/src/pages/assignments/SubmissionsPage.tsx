@@ -81,17 +81,21 @@ export default function SubmissionsPage() {
     field: "grade" | "feedback",
     value: string,
   ) => {
-    setGrading((prev) => ({
-      ...prev,
-      [submissionId]: { ...prev[submissionId], [field]: value },
-    }));
+    setGrading((prev) => {
+      const current = prev[submissionId] || { grade: "", feedback: "" };
+      return {
+        ...prev,
+        [submissionId]: { ...current, [field]: value },
+      };
+    });
     setSuccessMessage("");
     setErrorMessage("");
   };
 
   const handleSaveGrade = async (submission: Submission) => {
-    const data = grading[String(submission.id)];
+    const data = grading[String(submission.id)] || { grade: "", feedback: "" };
     const gradeNum = data.grade ? Number(data.grade) : null;
+
     if (
       gradeNum !== null &&
       (isNaN(gradeNum) || gradeNum < 0 || gradeNum > 20)
@@ -99,6 +103,7 @@ export default function SubmissionsPage() {
       setErrorMessage("نمره باید عددی بین 0 تا 20 باشد.");
       return;
     }
+
     try {
       await submissionService.update(submission.id, {
         grade: gradeNum,

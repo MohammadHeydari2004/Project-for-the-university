@@ -85,6 +85,7 @@ function Sidebar() {
             <NavLink
               key={item.path}
               to={item.path}
+              end={item.path === "/"}
               onClick={() => setIsOpen(false)}
               className={({ isActive }) =>
                 `rounded-lg px-4 py-2 text-sm font-medium transition ${isActive ? "bg-blue-100 text-blue-700" : "text-gray-700 hover:bg-gray-100"}`
