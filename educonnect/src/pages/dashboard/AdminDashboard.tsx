@@ -1,18 +1,18 @@
+import Card from "#/components/ui/Card.tsx";
+import StatCard from "#/components/ui/StatCard.tsx";
+import StatusChip from "#/components/ui/StatusChip.tsx";
+import Table from "#/components/ui/Table.tsx";
+import type { User } from "#/types/user.ts";
+import { formatDate } from "#/utils/formatDate.ts";
 import {
-  PieChart,
-  Pie,
   Cell,
+  Legend,
+  Pie,
+  PieChart,
   ResponsiveContainer,
   Tooltip,
-  Legend,
 } from "recharts";
-import StatCard from "./StatCard";
-import Card from "#/components/ui/Card.tsx";
-import Table from "#/components/ui/Table.tsx";
-import StatusChip from "#/components/ui/StatusChip.tsx";
-import { formatDate } from "#/utils/formatDate.ts";
-import type { DashboardData } from "./DashboardPage";
-import type { User } from "#/types/user.ts";
+import type { DashboardData } from "./DashboardContainer";
 
 const COLORS = ["#3b82f6", "#10b981", "#f59e0b", "#ef4444", "#6b7280"];
 
@@ -76,7 +76,6 @@ export default function AdminDashboard({ data }: Props) {
                   innerRadius={60}
                   outerRadius={80}
                   fill="#8884d8"
-                  paddingAngle={2}
                   dataKey="value"
                 >
                   {roleData.map((_, index) => (
@@ -101,7 +100,7 @@ export default function AdminDashboard({ data }: Props) {
                             : 0;
 
                         return (
-                          <div className="rounded-lg border border-gray-200 bg-white p-2 shadow-sm text-sm">
+                          <div className="rounded-lg border border-gray-200 bg-white p-2 text-sm shadow-xs">
                             <p
                               style={{ color: itemColor }}
                               className="font-bold"
@@ -121,7 +120,7 @@ export default function AdminDashboard({ data }: Props) {
                   content={({ payload }) => {
                     if (payload) {
                       return (
-                        <ul className="flex justify-center gap-4 mt-2">
+                        <ul className="mt-2 flex justify-center gap-4">
                           {payload.map((entry, index) => {
                             const entryValue = String(entry.value ?? "");
                             const entryColor = entry.color ?? "#8884d8";

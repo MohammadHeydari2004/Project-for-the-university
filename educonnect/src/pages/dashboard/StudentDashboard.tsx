@@ -1,19 +1,25 @@
+import Card from "#/components/ui/Card.tsx";
+import StatCard from "#/components/ui/StatCard.tsx";
+import type { User } from "#/types/user.ts";
+import { formatDate } from "#/utils/formatDate.ts";
 import { useMemo } from "react";
 import {
-  PieChart,
-  Pie,
   Cell,
+  Legend,
+  Pie,
+  PieChart,
   ResponsiveContainer,
   Tooltip,
-  Legend,
 } from "recharts";
-import StatCard from "./StatCard";
-import Card from "#/components/ui/Card.tsx";
-import { formatDate } from "#/utils/formatDate.ts";
-import type { DashboardData } from "./DashboardPage";
-import type { User } from "#/types/user.ts";
+import type { DashboardData } from "./DashboardContainer";
 
-const COLORS = ["#10b981", "#f59e0b", "#ef4444"]; // Present, Late, Absent
+const ATTENDANCE_COLORS: Record<string, string> = {
+  حاضر: "#16a34a", // green-600
+  "با تأخیر": "#ca8a04", // yellow-600
+  غایب: "#dc2626", // red-600
+};
+
+const FALLBACK_COLOR = "#8884d8";
 
 interface ChartDataItem {
   name: string;
@@ -43,7 +49,7 @@ function CustomAttendanceTooltip({ active, payload }: CustomTooltipProps) {
       const name = data.payload?.name ?? data.name ?? "";
 
       return (
-        <div className="min-w-[160px] rounded-lg border border-gray-200 bg-white p-3 text-sm shadow-lg">
+        <div className="min-w-40 rounded-lg border border-gray-200 bg-white p-3 text-sm shadow-lg">
           <p
             style={{ color: itemColor }}
             className="mb-2 border-b pb-1 font-bold"
@@ -243,14 +249,15 @@ export default function StudentDashboard({ data, currentUser }: Props) {
                     data={attendanceChartData}
                     cx="50%"
                     cy="40%"
+                    innerRadius={60}
                     outerRadius={80}
-                    fill="#8884d8"
+                    fill={FALLBACK_COLOR}
                     dataKey="value"
                   >
-                    {attendanceChartData.map((_, index) => (
+                    {attendanceChartData.map((entry) => (
                       <Cell
-                        key={`cell-${index}`}
-                        fill={COLORS[index % COLORS.length]}
+                        key={`cell-${entry.name}`}
+                        fill={ATTENDANCE_COLORS[entry.name] ?? FALLBACK_COLOR}
                       />
                     ))}
                   </Pie>

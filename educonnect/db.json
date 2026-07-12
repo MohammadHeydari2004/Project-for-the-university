@@ -914,17 +914,8 @@
       "classId": "0",
       "authorId": "1",
       "createdAt": "2025-02-20T10:00:00.000Z",
-      "seenBy": [
-        "2",
-        "3",
-        "7",
-        "8"
-      ],
-      "targetRoles": [
-        "admin",
-        "teacher",
-        "student"
-      ]
+      "seenBy": ["2", "3", "7", "8"],
+      "targetRoles": ["admin", "teacher", "student"]
     },
     {
       "id": "ann2",
@@ -933,14 +924,8 @@
       "classId": "0",
       "authorId": "1",
       "createdAt": "2025-03-01T10:00:00.000Z",
-      "seenBy": [
-        "2",
-        "3"
-      ],
-      "targetRoles": [
-        "admin",
-        "teacher"
-      ]
+      "seenBy": ["2", "3"],
+      "targetRoles": ["admin", "teacher"]
     },
     {
       "id": "ann3",
@@ -949,10 +934,7 @@
       "classId": "c1",
       "authorId": "2",
       "createdAt": "2025-03-05T10:00:00.000Z",
-      "seenBy": [
-        "7",
-        "8"
-      ],
+      "seenBy": ["7", "8"],
       "targetAudience": "students"
     },
     {
@@ -962,9 +944,7 @@
       "classId": "c1",
       "authorId": "2",
       "createdAt": "2025-03-10T10:00:00.000Z",
-      "seenBy": [
-        "8"
-      ],
+      "seenBy": ["8"],
       "targetAudience": "students"
     },
     {
@@ -974,13 +954,8 @@
       "classId": "0",
       "authorId": "2",
       "createdAt": "2025-03-12T10:00:00.000Z",
-      "seenBy": [
-        "3",
-        "2"
-      ],
-      "targetRoles": [
-        "teacher"
-      ]
+      "seenBy": ["3", "2"],
+      "targetRoles": ["teacher"]
     },
     {
       "id": "ann6",
@@ -989,13 +964,8 @@
       "classId": "0",
       "authorId": "3",
       "createdAt": "2025-03-15T10:00:00.000Z",
-      "seenBy": [
-        "2",
-        "1"
-      ],
-      "targetRoles": [
-        "teacher"
-      ]
+      "seenBy": ["2", "1"],
+      "targetRoles": ["teacher"]
     },
     {
       "id": "ann7",
@@ -1004,10 +974,7 @@
       "classId": "c2",
       "authorId": "2",
       "createdAt": "2025-04-01T10:00:00.000Z",
-      "seenBy": [
-        "7",
-        "1"
-      ],
+      "seenBy": ["7", "1"],
       "targetAudience": "students"
     },
     {
@@ -1017,11 +984,7 @@
       "classId": "c1",
       "authorId": "2",
       "createdAt": "2025-04-05T10:00:00.000Z",
-      "seenBy": [
-        "1",
-        "2",
-        "8"
-      ],
+      "seenBy": ["1", "2", "8"],
       "targetAudience": "both"
     }
   ],
@@ -1171,6 +1134,5 @@
       "feedback": "test 2",
       "updatedAt": "2026-07-07T23:09:53.354Z"
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }

@@ -1,20 +1,20 @@
+import Card from "#/components/ui/Card.tsx";
+import StatCard from "#/components/ui/StatCard.tsx";
+import Table from "#/components/ui/Table.tsx";
+import type { User } from "#/types/user.ts";
+import { formatDate } from "#/utils/formatDate.ts";
 import { useMemo } from "react";
 import {
-  BarChart,
   Bar,
+  BarChart,
+  CartesianGrid,
+  Legend,
+  ResponsiveContainer,
+  Tooltip,
   XAxis,
   YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-  Legend,
 } from "recharts";
-import StatCard from "./StatCard";
-import Card from "#/components/ui/Card.tsx";
-import Table from "#/components/ui/Table.tsx";
-import { formatDate } from "#/utils/formatDate.ts";
-import type { DashboardData } from "./DashboardPage";
-import type { User } from "#/types/user.ts";
+import type { DashboardData } from "./DashboardContainer";
 
 interface ChartDataItem {
   name: string;
@@ -47,7 +47,7 @@ function CustomTooltip({ active, payload }: CustomTooltipProps) {
         total > 0 ? ((graded / total) * 100).toFixed(0) : "0";
 
       return (
-        <div className="min-w-[200px] rounded-lg border border-gray-200 bg-white p-3 text-sm shadow-lg">
+        <div className="min-w-50 rounded-lg border border-gray-200 bg-white p-3 text-sm shadow-lg">
           <p className="mb-2 border-b pb-1 font-bold text-gray-800">
             {data.name}
           </p>
@@ -69,8 +69,8 @@ function CustomTooltip({ active, payload }: CustomTooltipProps) {
               <span className="font-bold text-gray-700">{entry.value}</span>
             </div>
           ))}
-          <div className="mt-2 border-t pt-2 flex items-center justify-between">
-            <span className="text-gray-600 font-medium">پیشرفت تصحیح:</span>
+          <div className="mt-2 flex items-center justify-between border-t pt-2">
+            <span className="font-medium text-gray-600">پیشرفت تصحیح:</span>
             <span className="font-bold text-blue-600">{progressPercent}%</span>
           </div>
         </div>
@@ -89,32 +89,34 @@ export default function TeacherDashboard({ data, currentUser }: Props) {
   const { classes, assignments, submissions, sessions, announcements } = data;
 
   const myClasses = useMemo(
-    () => classes.filter((c) => String(c.teacherId) === String(currentUser.id)),
+    () => classes.filter((c) => c.teacherId === currentUser.id), 
     [classes, currentUser],
   );
-  const myClassIds = myClasses.map((c) => String(c.id));
+  const myClassIds = myClasses.map((c) => c.id);
 
   const myAssignments = useMemo(
-    () => assignments.filter((a) => myClassIds.includes(String(a.classId))),
+    () => assignments.filter((a) => myClassIds.includes(a.classId)), 
     [assignments, myClassIds],
   );
-  const myAssignmentIds = myAssignments.map((a) => String(a.id));
+  const myAssignmentIds = myAssignments.map((a) => a.id); 
 
   const mySubmissions = useMemo(
     () =>
-      submissions.filter((s) =>
-        myAssignmentIds.includes(String(s.assignmentId)),
+      submissions.filter(
+        (s) => myAssignmentIds.includes(s.assignmentId), 
       ),
     [submissions, myAssignmentIds],
   );
+
   const mySessions = useMemo(
-    () => sessions.filter((s) => myClassIds.includes(String(s.classId))),
+    () => sessions.filter((s) => myClassIds.includes(s.classId)),
     [sessions, myClassIds],
   );
+
   const myAnnouncements = useMemo(
     () =>
       announcements.filter(
-        (a) => String(a.authorId) === String(currentUser.id),
+        (a) => a.authorId === currentUser.id, 
       ),
     [announcements, currentUser],
   );
@@ -125,14 +127,12 @@ export default function TeacherDashboard({ data, currentUser }: Props) {
 
   const chartData = myClasses.map((c) => {
     const classAssignments = assignments.filter(
-      (a) => String(a.classId) === String(c.id),
+      (a) => a.classId === c.id, 
     );
-    const classAssignmentIds = classAssignments.map((a) => String(a.id));
-
-    const classSubmissions = submissions.filter((s) =>
-      classAssignmentIds.includes(String(s.assignmentId)),
+    const classAssignmentIds = classAssignments.map((a) => a.id); 
+    const classSubmissions = submissions.filter(
+      (s) => classAssignmentIds.includes(s.assignmentId), 
     );
-
     const gradedSubmissions = classSubmissions.filter(
       (s) => s.status === "graded",
     );
@@ -175,7 +175,7 @@ export default function TeacherDashboard({ data, currentUser }: Props) {
         />
       </div>
 
-      <div className="grid gap-6 grid-flow-row">
+      <div className="grid grid-flow-row gap-6">
         <Card title="وضعیت تصحیح تکالیف به تفکیک کلاس">
           {chartData.length === 0 ||
           chartData.every((d) => d.totalSubmissions === 0) ? (
@@ -185,21 +185,20 @@ export default function TeacherDashboard({ data, currentUser }: Props) {
           ) : (
             <div className="h-80">
               <ResponsiveContainer width="100%" height="100%">
-                {/* ✅ نمودار عمودی استاندارد */}
                 <BarChart
                   data={chartData}
-                  margin={{ top: 20, right: 30, left: 20, bottom: 60 }} // ✅ افزایش فضای پایین برای نام‌ها
+                  margin={{ top: 20, right: 30, left: 20, bottom: 60 }}
                 >
                   <CartesianGrid
                     strokeDasharray="3 3"
-                    vertical={false} // ✅ فقط خطوط افقی
+                    vertical={false}
                     stroke="#f1f5f9"
                   />
                   <XAxis
                     dataKey="name"
                     tick={{ fontSize: 12, fill: "#64748b" }}
-                    interval={0} // ✅ نمایش همه نام‌ها
-                    height={60} // ✅ فضای کافی برای صاف و کامل بودن نام‌ها
+                    interval={0}
+                    height={60}
                     axisLine={false}
                     tickLine={false}
                   />
@@ -218,17 +217,16 @@ export default function TeacherDashboard({ data, currentUser }: Props) {
                     wrapperStyle={{ paddingBottom: "20px", fontSize: "13px" }}
                     iconType="circle"
                   />
-                  {/* ✅ میله‌های مجزا (Grouped Bar Chart) */}
                   <Bar
                     dataKey="نمره داده شده"
                     fill="#10b981"
-                    radius={[4, 4, 0, 0]} // ✅ گرد کردن گوشه‌های بالایی
-                    barSize={24} // ✅ عرض مشخص برای میله‌ها
+                    radius={[4, 4, 0, 0]}
+                    barSize={24}
                   />
                   <Bar
                     dataKey="در انتظار بررسی"
                     fill="#f59e0b"
-                    radius={[4, 4, 0, 0]} // ✅ گرد کردن گوشه‌های بالایی
+                    radius={[4, 4, 0, 0]}
                     barSize={24}
                   />
                 </BarChart>
@@ -254,8 +252,7 @@ export default function TeacherDashboard({ data, currentUser }: Props) {
                   key: "classId",
                   title: "کلاس",
                   render: (s) =>
-                    classes.find((c) => String(c.id) === String(s.classId))
-                      ?.title || "نامشخص",
+                    classes.find((c) => c.id === s.classId)?.title || "نامشخص", 
                 },
               ]}
               data={recentSessions}
