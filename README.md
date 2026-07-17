@@ -124,7 +124,7 @@
 
 ```bash
 # 1. کلون کردن پروژه
-git clone https://github.com/your-username/educonnect.git
+git clone git clone https://github.com/MohammadHeydari2004/Project-for-the-university.git
 cd educonnect
 
 # 2. نصب وابستگی‌ها
@@ -297,7 +297,7 @@ VITE_STORAGE_PREFIX=educonnect_dev_
 
 ---
 
-## 📸 اسکرین‌شات‌ها
+<!-- ## 📸 اسکرین‌شات‌ها
 
 <details>
 <summary>📷 مشاهده اسکرین‌شات‌ها</summary>
@@ -334,7 +334,7 @@ VITE_STORAGE_PREFIX=educonnect_dev_
 
 ![Announcements](docs/screenshots/announcements.png)
 
-</details>
+</details> -->
 
 ---
 
@@ -389,7 +389,7 @@ VITE_STORAGE_PREFIX=educonnect_dev_
 
 اگر سوالی دارید یا با مشکلی مواجه شدید:
 
-- 📧 ایمیل: mh419421@gmail.com
+- 📧 ایمیل: [mh419421@gmail.com](mailto:mh419421@gmail.com)
 - 🐛 گزارش باگ: [GitHub Issues](https://github.com/MohammadHeydari2004/Project-for-the-university/issues)
 
 ---
@@ -398,7 +398,7 @@ VITE_STORAGE_PREFIX=educonnect_dev_
 
 **ساخته شده با ❤️ برای جامعه آموزشی ایران**
 
-[⭐ Star this repo](https://github.com/your-username/educonnect) اگر این پروژه برایتان مفید بود!
+[⭐ Star this repo](https://github.com/MohammadHeydari2004/Project-for-the-university) اگر این پروژه برایتان مفید بود!
 
 </div>
 ```
