@@ -1,4 +1,3 @@
-````markdown
 # 🎓 EduConnect - سامانه مدیریت آموزشی
 
 <div align="center">
@@ -140,7 +139,6 @@ npm run server
 # 5. اجرای Development Server (در ترمینال دیگر)
 npm run dev
 ```
-````
 
 پس از اجرای موفق، اپلیکیشن در آدرس `http://localhost:5173` در دسترس خواهد بود.
 
